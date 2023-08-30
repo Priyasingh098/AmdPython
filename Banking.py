@@ -61,10 +61,10 @@ class CurrentAccount(BankAccount):
             account_type = input("Enter account type (Savings or Current): ").lower()
             if account_type == "savings":
                 accounts[account_number] = SavingsAccount(account_number, account_holder)
-                print("Account created successfully")
+                print("Account created successfully.")
             elif account_type == "current":
                 accounts[account_number] = CurrentAccount(account_number, account_holder)
-                print("Account created successfully")
+                print("Account created successfully.")
             else:
                 print("Invalid account type.")
 
