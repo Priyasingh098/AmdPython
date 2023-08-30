@@ -41,7 +41,7 @@ class CurrentAccount(BankAccount):
         super().__init__(account_number, account_holder)
         
 
-def main():
+
     accounts = {}  # Dictionary to store account instances.
 
     while True:
@@ -130,5 +130,4 @@ def main():
             print("Exiting the program.")
             break
 
-if __name__ == "__main__":
-    main()
+
