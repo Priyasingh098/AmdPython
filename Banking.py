@@ -82,7 +82,6 @@ def main():
             if account_number in accounts:
                 account = accounts[account_number]  # Get the account instance
                 if isinstance(account, CurrentAccount):
-                    # If it's a CurrentAccount, apply overdraft protection if needed.
                     if account.withdraw(amount):
                         print("Withdrawal successful.")
                     else:
